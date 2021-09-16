@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="tariqmal" Class="TariqMalDataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=68.67.73.36;Initial Catalog=tariqmal;Persist Security Info=True;User ID=tariqmal" SettingsObjectName="Mohammad.Projects.TariqMal.DataAccess.Properties.Settings" SettingsPropertyName="TariqmalConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="tariqmal.Country" Member="Countries">
+    <Type Name="Country">
+      <Column Name="Id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NameTranslationId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Association Name="Country_User" Member="Users" ThisKey="Id" OtherKey="CountryId" Type="User" />
+    </Type>
+  </Table>
+  <Table Name="tariqmal.[User]" Member="Users">
+    <Type Name="User">
+      <Column Name="Id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="IsLocked" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsActivated" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="LastLoginTime" Type="System.DateTime" DbType="DateTime2" CanBeNull="true" />
+      <Column Name="RegisterationTime" Type="System.DateTime" DbType="DateTime2 NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(2048) NOT NULL" CanBeNull="false" />
+      <Column Name="MobileNumber" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CountryId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="IsAdmin" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Language" Type="System.String" DbType="NVarChar(8) NOT NULL" CanBeNull="false" />
+      <Association Name="Country_User" Member="Country" ThisKey="CountryId" OtherKey="Id" Type="Country" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="tariqmal.HomePageMainMenu" Member="HomePageMainMenus">
+    <Type Name="HomePageMainMenu">
+      <Column Name="Id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TitleTranslationId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="ParentId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="MenuOrder" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MenuType" Type="System.String" DbType="NVarChar(32)" CanBeNull="true" />
+      <Column Name="LinkId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="tariqmal.News" Member="News">
+    <Type Name="New">
+      <Column Name="Id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="StartDate" Type="System.DateTime" DbType="DateTime2" CanBeNull="true" />
+      <Column Name="EndDate" Type="System.DateTime" DbType="DateTime2" CanBeNull="true" />
+      <Column Name="IsTopNews" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="TitleTranslationId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="TextTranslationId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="SummaryTranslationId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="tariqmal.Service" Member="Services">
+    <Type Name="Service">
+      <Column Name="Id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TitleTransaltionId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="TextTraslationId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="ThumbnailUri" Type="System.String" DbType="NVarChar(2048)" CanBeNull="true" />
+      <Column Name="BackgroudImageUri" Type="System.String" DbType="NVarChar(2048)" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="SummaryTraslationId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="tariqmal.Translation" Member="Translations">
+    <Type Name="Translation">
+      <Column Name="Id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Arabic" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="English" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Persian" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="tariqmal.Translate" Method="Translate" IsComposable="true">
+    <Parameter Name="Id" Parameter="id" Type="System.Guid" DbType="UniqueIdentifier" />
+    <Parameter Name="Languge" Parameter="languge" Type="System.String" DbType="NVarChar(2)" />
+    <Return Type="System.String" />
+  </Function>
+  <Function Name="tariqmal.TranslateArabicMesssage" Method="TranslateArabicMesssage" IsComposable="true">
+    <Parameter Name="Message" Parameter="message" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="Languge" Parameter="languge" Type="System.String" DbType="NVarChar(2)" />
+    <Return Type="System.String" />
+  </Function>
+  <Function Name="tariqmal.TranslatePersianMesssage" Method="TranslatePersianMesssage" IsComposable="true">
+    <Parameter Name="Message" Parameter="message" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="Languge" Parameter="languge" Type="System.String" DbType="NVarChar(2)" />
+    <Return Type="System.String" />
+  </Function>
+  <Function Name="tariqmal.TranslateEnglishMesssage" Method="TranslateEnglishMesssage" IsComposable="true">
+    <Parameter Name="Message" Parameter="message" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="Languge" Parameter="languge" Type="System.String" DbType="NVarChar(2)" />
+    <Return Type="System.String" />
+  </Function>
+</Database>

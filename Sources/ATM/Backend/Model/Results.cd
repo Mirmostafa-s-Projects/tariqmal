@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Interface Name="Mohammad.Projects.TariqMal.Business.Model.Internals.IResult" Collapsed="true">
+    <Position X="5.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAEAA=</HashCode>
+      <FileName>Internals\IResult.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Mohammad.Projects.TariqMal.Business.Model.Internals.IResultItem" Collapsed="true">
+    <Position X="5.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Internals\IResultItem.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Mohammad.Projects.TariqMal.Business.Model.Internals.IResultList&lt;TResultItem&gt;" Collapsed="true">
+    <Position X="7.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Internals\IResultList.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Mohammad.Projects.TariqMal.Business.Model.Internals.IModel" Collapsed="true">
+    <Position X="8.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Internals\IModel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

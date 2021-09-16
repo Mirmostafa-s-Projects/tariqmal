@@ -1,0 +1,50 @@
+[6/3/2019 12:12:07 AM]
+            http://localhost/tariqmal/translate?text=Services&fromLanguage=En
+            
+System.Net.WebException: The remote name could not be resolved: 'datamarket.accesscontrol.windows.net'
+   at System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at Mohammad.Specialized.BingInternals.AdmAuthentication.HttpPost(String datamarketAccessUri, String requestDetails) in D:\Programming\VS\Library\Sources\dotNet45\CoreLib45\Specialized\BingInternals\TranslationService.cs:line 137
+   at Mohammad.Specialized.BingInternals.AdmAuthentication..ctor(String clientId, String clientSecret) in D:\Programming\VS\Library\Sources\dotNet45\CoreLib45\Specialized\BingInternals\TranslationService.cs:line 89
+   at Mohammad.Specialized.BingInternals.TranslationService.Translate(String text, String from, String to) in D:\Programming\VS\Library\Sources\dotNet45\CoreLib45\Specialized\BingInternals\TranslationService.cs:line 32
+   at Mohammad.Specialized.BingService.Translate(String text, String fromLanguage, String toLanguage, String clientId, String clientSecret) in D:\Programming\VS\Library\Sources\dotNet45\CoreLib45\Specialized\BingService.cs:line 50
+   at Mohammad.Projects.TariqMal.Business.Infrastructure.TranslationEntity.Translate(String text, Language source, Language target) in D:\Programming\VS\tariqmal\Sources\ATM\Backend\Business\Infrastructure\TranslationEntity.cs:line 50
+   at Mohammad.Projects.TariqMal.Api.Controllers.TranslationController.<>c__DisplayClass0_0.<Translate>b__0() in D:\Programming\VS\tariqmal\Sources\ATM\Backend\WebApi\Areas\Api\Controllers\TranslationController.cs:line 29
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Mohammad.Web.Api.LibraryApiControllerBase.<Async>d__15`1.MoveNext() in D:\Programming\VS\Library\Sources\dotNet45\Web45\Api\LibraryApiControllerBase.cs:line 82
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Mohammad.Projects.TariqMal.Api.Controllers.TranslationController.<Translate>d__0.MoveNext() in D:\Programming\VS\tariqmal\Sources\ATM\Backend\WebApi\Areas\Api\Controllers\TranslationController.cs:line 29
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Threading.Tasks.TaskHelpersExtensions.<CastToObject>d__1`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()

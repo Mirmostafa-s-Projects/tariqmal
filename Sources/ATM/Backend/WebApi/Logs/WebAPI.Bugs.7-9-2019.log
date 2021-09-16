@@ -1,0 +1,166 @@
+[7/9/2019 9:52:55 PM]
+            http://localhost/tariqmal/news/9486c811-b593-4b2b-9763-f373ad420101
+            
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Mohammad.Projects.TariqMal.Business.Entities.NewsEntity.OnGotById(New dalModel)
+   at Mohammad.Projects.TariqMal.Business.Internals.AtmManipulationBusinessEntityBase`6.OnGettingById(Guid id, Language lang)
+   at Mohammad.Projects.TariqMal.Business.Internals.AtmManipulationBusinessEntityBase`6.GetById(Guid id, Language lang)
+   at Mohammad.Projects.TariqMal.Api.Internals.AtmApiControllerBase.<>c__DisplayClass6_0`1.<OnGettingById>b__0()
+   at Mohammad.Web.Api.LibraryApiControllerBase.Run[TResult](Func`1 action) in D:\Programming\VS\Library\Sources\dotNet45\Web45\Api\LibraryApiControllerBase.cs:line 112
+   at Mohammad.Web.Api.LibraryApiControllerBase.<>c__DisplayClass18_0`1.<RunAsync>b__0() in D:\Programming\VS\Library\Sources\dotNet45\Web45\Api\LibraryApiControllerBase.cs:line 129
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Mohammad.Web.Api.LibraryApiControllerBase.<Async>d__15`1.MoveNext() in D:\Programming\VS\Library\Sources\dotNet45\Web45\Api\LibraryApiControllerBase.cs:line 98
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Mohammad.Web.Api.LibraryApiControllerBase.<RunAsync>d__18`1.MoveNext() in D:\Programming\VS\Library\Sources\dotNet45\Web45\Api\LibraryApiControllerBase.cs:line 129
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Mohammad.Projects.TariqMal.Api.Internals.AtmApiControllerBase.<OnGettingById>d__6`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Mohammad.Projects.TariqMal.Api.Controllers.NewsController.<Get>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Threading.Tasks.TaskHelpersExtensions.<CastToObject>d__1`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()[7/9/2019 9:53:38 PM]
+            http://localhost/tariqmal/news/9486c811-b593-4b2b-9763-f373ad420101
+            
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Mohammad.Projects.TariqMal.Business.Entities.NewsEntity.OnGotById(New dalModel)
+   at Mohammad.Projects.TariqMal.Business.Internals.AtmManipulationBusinessEntityBase`6.OnGettingById(Guid id, Language lang)
+   at Mohammad.Projects.TariqMal.Business.Internals.AtmManipulationBusinessEntityBase`6.GetById(Guid id, Language lang)
+   at Mohammad.Projects.TariqMal.Api.Internals.AtmApiControllerBase.<>c__DisplayClass6_0`1.<OnGettingById>b__0()
+   at Mohammad.Web.Api.LibraryApiControllerBase.Run[TResult](Func`1 action) in D:\Programming\VS\Library\Sources\dotNet45\Web45\Api\LibraryApiControllerBase.cs:line 112
+   at Mohammad.Web.Api.LibraryApiControllerBase.<>c__DisplayClass18_0`1.<RunAsync>b__0() in D:\Programming\VS\Library\Sources\dotNet45\Web45\Api\LibraryApiControllerBase.cs:line 129
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Mohammad.Web.Api.LibraryApiControllerBase.<Async>d__15`1.MoveNext() in D:\Programming\VS\Library\Sources\dotNet45\Web45\Api\LibraryApiControllerBase.cs:line 98
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Mohammad.Web.Api.LibraryApiControllerBase.<RunAsync>d__18`1.MoveNext() in D:\Programming\VS\Library\Sources\dotNet45\Web45\Api\LibraryApiControllerBase.cs:line 129
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Mohammad.Projects.TariqMal.Api.Internals.AtmApiControllerBase.<OnGettingById>d__6`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Mohammad.Projects.TariqMal.Api.Controllers.NewsController.<Get>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Threading.Tasks.TaskHelpersExtensions.<CastToObject>d__1`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()[7/9/2019 9:53:45 PM]
+            http://localhost/tariqmal/news/9486c811-b593-4b2b-9763-f373ad420101
+            
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Mohammad.Projects.TariqMal.Business.Entities.NewsEntity.OnGotById(New dalModel)
+   at Mohammad.Projects.TariqMal.Business.Internals.AtmManipulationBusinessEntityBase`6.OnGettingById(Guid id, Language lang)
+   at Mohammad.Projects.TariqMal.Business.Internals.AtmManipulationBusinessEntityBase`6.GetById(Guid id, Language lang)
+   at Mohammad.Projects.TariqMal.Api.Internals.AtmApiControllerBase.<>c__DisplayClass6_0`1.<OnGettingById>b__0()
+   at Mohammad.Web.Api.LibraryApiControllerBase.Run[TResult](Func`1 action) in D:\Programming\VS\Library\Sources\dotNet45\Web45\Api\LibraryApiControllerBase.cs:line 112
+   at Mohammad.Web.Api.LibraryApiControllerBase.<>c__DisplayClass18_0`1.<RunAsync>b__0() in D:\Programming\VS\Library\Sources\dotNet45\Web45\Api\LibraryApiControllerBase.cs:line 129
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Mohammad.Web.Api.LibraryApiControllerBase.<Async>d__15`1.MoveNext() in D:\Programming\VS\Library\Sources\dotNet45\Web45\Api\LibraryApiControllerBase.cs:line 98
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Mohammad.Web.Api.LibraryApiControllerBase.<RunAsync>d__18`1.MoveNext() in D:\Programming\VS\Library\Sources\dotNet45\Web45\Api\LibraryApiControllerBase.cs:line 129
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Mohammad.Projects.TariqMal.Api.Internals.AtmApiControllerBase.<OnGettingById>d__6`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Mohammad.Projects.TariqMal.Api.Controllers.NewsController.<Get>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Threading.Tasks.TaskHelpersExtensions.<CastToObject>d__1`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()

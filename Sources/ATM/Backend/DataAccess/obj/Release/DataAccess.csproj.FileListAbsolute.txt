@@ -1,0 +1,8 @@
+D:\Programming\VS\tariqmal\Sources\ATM\Backend\DataAccess\bin\Release\ATM.DAL.dll.config
+D:\Programming\VS\tariqmal\Sources\ATM\Backend\DataAccess\bin\Release\ATM.DAL.dll
+D:\Programming\VS\tariqmal\Sources\ATM\Backend\DataAccess\bin\Release\Library45.Core.dll
+D:\Programming\VS\tariqmal\Sources\ATM\Backend\DataAccess\bin\Release\System.ValueTuple.dll
+D:\Programming\VS\tariqmal\Sources\ATM\Backend\DataAccess\bin\Release\Library45.Core.pdb
+D:\Programming\VS\tariqmal\Sources\ATM\Backend\DataAccess\obj\Release\DataAccess.csproj.CoreCompileInputs.cache
+D:\Programming\VS\tariqmal\Sources\ATM\Backend\DataAccess\obj\Release\DataAccess.csproj.CopyComplete
+D:\Programming\VS\tariqmal\Sources\ATM\Backend\DataAccess\obj\Release\ATM.DAL.dll

@@ -1,0 +1,17 @@
+D:\Programming\VS\Temp\Backend\Model\bin\Debug\ATM.BLL.Models.dll
+D:\Programming\VS\Temp\Backend\Model\bin\Debug\ATM.BLL.Models.pdb
+D:\Programming\VS\Temp\Backend\Model\bin\Debug\Newtonsoft.Json.dll
+D:\Programming\VS\Temp\Backend\Model\obj\Debug\Model.csprojAssemblyReference.cache
+D:\Programming\VS\Temp\Backend\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+D:\Programming\VS\Temp\Backend\Model\obj\Debug\Model.csproj.CopyComplete
+D:\Programming\VS\Temp\Backend\Model\obj\Debug\ATM.BLL.Models.dll
+D:\Programming\VS\Temp\Backend\Model\obj\Debug\ATM.BLL.Models.pdb
+D:\Programming\VS\tariqmal\Sources\ATM\Backend\Model\bin\Debug\ATM.BLL.Models.dll
+D:\Programming\VS\tariqmal\Sources\ATM\Backend\Model\bin\Debug\ATM.BLL.Models.pdb
+D:\Programming\VS\tariqmal\Sources\ATM\Backend\Model\bin\Debug\Newtonsoft.Json.dll
+D:\Programming\VS\tariqmal\Sources\ATM\Backend\Model\bin\Debug\System.ValueTuple.dll
+D:\Programming\VS\tariqmal\Sources\ATM\Backend\Model\obj\Debug\Model.csprojAssemblyReference.cache
+D:\Programming\VS\tariqmal\Sources\ATM\Backend\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+D:\Programming\VS\tariqmal\Sources\ATM\Backend\Model\obj\Debug\Model.csproj.CopyComplete
+D:\Programming\VS\tariqmal\Sources\ATM\Backend\Model\obj\Debug\ATM.BLL.Models.dll
+D:\Programming\VS\tariqmal\Sources\ATM\Backend\Model\obj\Debug\ATM.BLL.Models.pdb

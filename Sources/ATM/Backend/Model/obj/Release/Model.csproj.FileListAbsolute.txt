@@ -1,0 +1,6 @@
+D:\Programming\VS\tariqmal\Sources\ATM\Backend\Model\bin\Release\ATM.BLL.Models.dll
+D:\Programming\VS\tariqmal\Sources\ATM\Backend\Model\bin\Release\Newtonsoft.Json.dll
+D:\Programming\VS\tariqmal\Sources\ATM\Backend\Model\bin\Release\System.ValueTuple.dll
+D:\Programming\VS\tariqmal\Sources\ATM\Backend\Model\obj\Release\Model.csproj.CoreCompileInputs.cache
+D:\Programming\VS\tariqmal\Sources\ATM\Backend\Model\obj\Release\Model.csproj.CopyComplete
+D:\Programming\VS\tariqmal\Sources\ATM\Backend\Model\obj\Release\ATM.BLL.Models.dll

@@ -1,0 +1,345 @@
+[7/15/2019 12:34:44 AM]
+            http://localhost/tariqmal/user/register
+            
+System.ArgumentException: UserName cannot be null.
+   at Mohammad.Projects.TariqMal.Business.Entities.UserEntity.<Register>g__CheckIfNull|2_0(String variable, String name, <>c__DisplayClass2_0& ) in D:\Programming\VS\tariqmal\Sources\ATM\Backend\Business\Entities\UserEntity.cs:line 32
+   at Mohammad.Projects.TariqMal.Business.Entities.UserEntity.Register(RegisterUserArgument args, Language language) in D:\Programming\VS\tariqmal\Sources\ATM\Backend\Business\Entities\UserEntity.cs:line 36
+   at Mohammad.Projects.TariqMal.Api.Controllers.UserController.<>c__DisplayClass0_0.<RegisterUser>b__0() in D:\Programming\VS\tariqmal\Sources\ATM\Backend\WebApi\Areas\Api\Controllers\UserController.cs:line 20
+   at Mohammad.Web.Api.LibraryApiControllerBase.Run[TResult](Func`1 action) in D:\Programming\VS\Library\Sources\dotNet45\Web45\Api\LibraryApiControllerBase.cs:line 112
+   at Mohammad.Web.Api.LibraryApiControllerBase.<>c__DisplayClass18_0`1.<RunAsync>b__0() in D:\Programming\VS\Library\Sources\dotNet45\Web45\Api\LibraryApiControllerBase.cs:line 129
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Mohammad.Web.Api.LibraryApiControllerBase.<Async>d__15`1.MoveNext() in D:\Programming\VS\Library\Sources\dotNet45\Web45\Api\LibraryApiControllerBase.cs:line 98
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Mohammad.Web.Api.LibraryApiControllerBase.<RunAsync>d__18`1.MoveNext() in D:\Programming\VS\Library\Sources\dotNet45\Web45\Api\LibraryApiControllerBase.cs:line 129
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Mohammad.Projects.TariqMal.Api.Controllers.UserController.<RegisterUser>d__0.MoveNext() in D:\Programming\VS\tariqmal\Sources\ATM\Backend\WebApi\Areas\Api\Controllers\UserController.cs:line 20
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Threading.Tasks.TaskHelpersExtensions.<CastToObject>d__1`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()[7/15/2019 12:46:01 AM]
+            http://localhost/tariqmal/user/register
+            
+System.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK_User'. Cannot insert duplicate key in object 'tariqmal.User'. The duplicate key value is (00000000-0000-0000-0000-000000000000).
+The statement has been terminated.
+   at Mohammad.DesignPatterns.ExceptionHandlingPattern.ExceptionHandling`1.HandleException(Object sender, TException ex) in D:\Programming\VS\Library\Sources\dotNet45\CoreLib45\DesignPatterns\ExceptionHandlingPattern\ExceptionHandling.cs:line 42
+   at Mohammad.DesignPatterns.ExceptionHandlingPattern.ExceptionHandling`1.HandleException(TException ex) in D:\Programming\VS\Library\Sources\dotNet45\CoreLib45\DesignPatterns\ExceptionHandlingPattern\ExceptionHandling.cs:line 34
+   at Mohammad.Data.BusinessTools.BusinessEntity`2.Insert(TEntity entity, Boolean submitChanges) in D:\Programming\VS\Library\Sources\dotNet45\CoreLib45\Data\BusinessTools\BusinessEntity.cs:line 159
+   at Mohammad.Data.BusinessTools.BusinessEntity`2.Insert(TEntity entity) in D:\Programming\VS\Library\Sources\dotNet45\CoreLib45\Data\BusinessTools\BusinessEntity.cs:line 140
+   at Mohammad.Projects.TariqMal.Business.Entities.UserEntity.OnAdding(UserArgument argument, Language lang) in D:\Programming\VS\tariqmal\Sources\ATM\Backend\Business\Entities\UserEntity.cs:line 73
+   at Mohammad.Projects.TariqMal.Business.Internals.AtmManipulationBusinessEntityBase`6.Add(TArgument arg, Language lang) in D:\Programming\VS\tariqmal\Sources\ATM\Backend\Business\Internals\AtmManipulationBusinessEntityBase.cs:line 74
+   at Mohammad.Projects.TariqMal.Business.Entities.UserEntity.Register(RegisterUserArgument args, Language language) in D:\Programming\VS\tariqmal\Sources\ATM\Backend\Business\Entities\UserEntity.cs:line 47
+   at Mohammad.Projects.TariqMal.Api.Controllers.UserController.<>c__DisplayClass0_0.<RegisterUser>b__0() in D:\Programming\VS\tariqmal\Sources\ATM\Backend\WebApi\Areas\Api\Controllers\UserController.cs:line 20
+   at Mohammad.Web.Api.LibraryApiControllerBase.Run[TResult](Func`1 action) in D:\Programming\VS\Library\Sources\dotNet45\Web45\Api\LibraryApiControllerBase.cs:line 112
+   at Mohammad.Web.Api.LibraryApiControllerBase.<>c__DisplayClass18_0`1.<RunAsync>b__0() in D:\Programming\VS\Library\Sources\dotNet45\Web45\Api\LibraryApiControllerBase.cs:line 129
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Mohammad.Web.Api.LibraryApiControllerBase.<Async>d__15`1.MoveNext() in D:\Programming\VS\Library\Sources\dotNet45\Web45\Api\LibraryApiControllerBase.cs:line 98
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Mohammad.Web.Api.LibraryApiControllerBase.<RunAsync>d__18`1.MoveNext() in D:\Programming\VS\Library\Sources\dotNet45\Web45\Api\LibraryApiControllerBase.cs:line 129
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Mohammad.Projects.TariqMal.Api.Controllers.UserController.<RegisterUser>d__0.MoveNext() in D:\Programming\VS\tariqmal\Sources\ATM\Backend\WebApi\Areas\Api\Controllers\UserController.cs:line 20
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Threading.Tasks.TaskHelpersExtensions.<CastToObject>d__1`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ClientConnectionId:bf8c126e-5473-4d39-91b5-7e8eab5e4656
+Error Number:2627,State:1,Class:14[7/15/2019 12:49:21 AM]
+            http://localhost/tariqmal/user/register
+            
+System.ArgumentException: Password cannot be null.
+   at Mohammad.Projects.TariqMal.Business.Entities.UserEntity.<Register>g__CheckIfNull|2_0(String variable, String name, <>c__DisplayClass2_0& ) in D:\Programming\VS\tariqmal\Sources\ATM\Backend\Business\Entities\UserEntity.cs:line 32
+   at Mohammad.Projects.TariqMal.Business.Entities.UserEntity.Register(RegisterUserArgument args, Language language) in D:\Programming\VS\tariqmal\Sources\ATM\Backend\Business\Entities\UserEntity.cs:line 37
+   at Mohammad.Projects.TariqMal.Api.Controllers.UserController.<>c__DisplayClass0_0.<RegisterUser>b__0() in D:\Programming\VS\tariqmal\Sources\ATM\Backend\WebApi\Areas\Api\Controllers\UserController.cs:line 20
+   at Mohammad.Web.Api.LibraryApiControllerBase.Run[TResult](Func`1 action) in D:\Programming\VS\Library\Sources\dotNet45\Web45\Api\LibraryApiControllerBase.cs:line 112
+   at Mohammad.Web.Api.LibraryApiControllerBase.<>c__DisplayClass18_0`1.<RunAsync>b__0() in D:\Programming\VS\Library\Sources\dotNet45\Web45\Api\LibraryApiControllerBase.cs:line 129
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Mohammad.Web.Api.LibraryApiControllerBase.<Async>d__15`1.MoveNext() in D:\Programming\VS\Library\Sources\dotNet45\Web45\Api\LibraryApiControllerBase.cs:line 98
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Mohammad.Web.Api.LibraryApiControllerBase.<RunAsync>d__18`1.MoveNext() in D:\Programming\VS\Library\Sources\dotNet45\Web45\Api\LibraryApiControllerBase.cs:line 129
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Mohammad.Projects.TariqMal.Api.Controllers.UserController.<RegisterUser>d__0.MoveNext() in D:\Programming\VS\tariqmal\Sources\ATM\Backend\WebApi\Areas\Api\Controllers\UserController.cs:line 20
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Threading.Tasks.TaskHelpersExtensions.<CastToObject>d__1`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()[7/15/2019 12:49:33 AM]
+            http://localhost/tariqmal/user/register
+            
+System.ArgumentException: UserName cannot be null.
+   at Mohammad.Projects.TariqMal.Business.Entities.UserEntity.<Register>g__CheckIfNull|2_0(String variable, String name, <>c__DisplayClass2_0& ) in D:\Programming\VS\tariqmal\Sources\ATM\Backend\Business\Entities\UserEntity.cs:line 32
+   at Mohammad.Projects.TariqMal.Business.Entities.UserEntity.Register(RegisterUserArgument args, Language language) in D:\Programming\VS\tariqmal\Sources\ATM\Backend\Business\Entities\UserEntity.cs:line 36
+   at Mohammad.Projects.TariqMal.Api.Controllers.UserController.<>c__DisplayClass0_0.<RegisterUser>b__0() in D:\Programming\VS\tariqmal\Sources\ATM\Backend\WebApi\Areas\Api\Controllers\UserController.cs:line 20
+   at Mohammad.Web.Api.LibraryApiControllerBase.Run[TResult](Func`1 action) in D:\Programming\VS\Library\Sources\dotNet45\Web45\Api\LibraryApiControllerBase.cs:line 112
+   at Mohammad.Web.Api.LibraryApiControllerBase.<>c__DisplayClass18_0`1.<RunAsync>b__0() in D:\Programming\VS\Library\Sources\dotNet45\Web45\Api\LibraryApiControllerBase.cs:line 129
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Mohammad.Web.Api.LibraryApiControllerBase.<Async>d__15`1.MoveNext() in D:\Programming\VS\Library\Sources\dotNet45\Web45\Api\LibraryApiControllerBase.cs:line 98
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Mohammad.Web.Api.LibraryApiControllerBase.<RunAsync>d__18`1.MoveNext() in D:\Programming\VS\Library\Sources\dotNet45\Web45\Api\LibraryApiControllerBase.cs:line 129
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Mohammad.Projects.TariqMal.Api.Controllers.UserController.<RegisterUser>d__0.MoveNext() in D:\Programming\VS\tariqmal\Sources\ATM\Backend\WebApi\Areas\Api\Controllers\UserController.cs:line 20
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Threading.Tasks.TaskHelpersExtensions.<CastToObject>d__1`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()[7/15/2019 1:31:50 AM]
+            http://localhost/tariqmal/user/login
+            
+System.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: SSL Provider, error: 0 - The wait operation timed out.) ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at System.Data.Linq.SqlClient.SqlConnectionManager.UseConnection(IConnectionUser user)
+   at System.Data.Linq.SqlClient.SqlProvider.get_IsSqlCe()
+   at System.Data.Linq.SqlClient.SqlProvider.InitializeProviderMode()
+   at System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   at System.Data.Linq.Table`1.GetEnumerator()
+   at System.Data.Linq.Table`1.System.Collections.Generic.IEnumerable<TEntity>.GetEnumerator()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at Mohammad.Projects.TariqMal.DataAccess.Infrastructure.UserDalEntity.Select(String userName, String password) in D:\Programming\VS\tariqmal\Sources\ATM\Backend\DataAccess\Infrastructure\UserDalEntity.cs:line 30
+   at Mohammad.Projects.TariqMal.Business.Entities.UserEntity.Authenticate(String userName, String password, Language language) in D:\Programming\VS\tariqmal\Sources\ATM\Backend\Business\Entities\UserEntity.cs:line 103
+   at Mohammad.Projects.TariqMal.Business.Entities.UserEntity.Login(String userName, String password, Language language) in D:\Programming\VS\tariqmal\Sources\ATM\Backend\Business\Entities\UserEntity.cs:line 115
+   at Mohammad.Projects.TariqMal.Api.Controllers.UserController.<>c__DisplayClass1_0.<LoginUser>b__0() in D:\Programming\VS\tariqmal\Sources\ATM\Backend\WebApi\Areas\Api\Controllers\UserController.cs:line 29
+   at Mohammad.Web.Api.LibraryApiControllerBase.Run[TResult](Func`1 action) in D:\Programming\VS\Library\Sources\dotNet45\Web45\Api\LibraryApiControllerBase.cs:line 112
+   at Mohammad.Web.Api.LibraryApiControllerBase.<>c__DisplayClass18_0`1.<RunAsync>b__0() in D:\Programming\VS\Library\Sources\dotNet45\Web45\Api\LibraryApiControllerBase.cs:line 129
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Mohammad.Web.Api.LibraryApiControllerBase.<Async>d__15`1.MoveNext() in D:\Programming\VS\Library\Sources\dotNet45\Web45\Api\LibraryApiControllerBase.cs:line 98
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Mohammad.Web.Api.LibraryApiControllerBase.<RunAsync>d__18`1.MoveNext() in D:\Programming\VS\Library\Sources\dotNet45\Web45\Api\LibraryApiControllerBase.cs:line 129
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Mohammad.Projects.TariqMal.Api.Controllers.UserController.<LoginUser>d__1.MoveNext() in D:\Programming\VS\tariqmal\Sources\ATM\Backend\WebApi\Areas\Api\Controllers\UserController.cs:line 29
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Threading.Tasks.TaskHelpersExtensions.<CastToObject>d__1`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ClientConnectionId:6c10fa2f-037d-4e1a-932e-c282dd5eb45f
+Error Number:258,State:0,Class:20[7/15/2019 2:22:24 AM]
+            http://localhost/tariqmal/user/edit/61e51f6b-2b01-456d-b28b-93a158b29d32
+            
+System.InvalidOperationException: An attempt was made to remove a relationship between a Country and a User. However, one of the relationship's foreign keys (User.CountryId) cannot be set to null.
+   at System.Data.Linq.ChangeTracker.StandardChangeTracker.StandardTrackedObject.SynchDependentData()
+   at System.Data.Linq.ChangeProcessor.GetChangeSet()
+   at System.Data.Linq.DataContext.GetChangeSet()
+   at Mohammad.Data.DataAccessTools.DataAccessEntityOnLinq`3.SaveChangesCore() in D:\Programming\VS\Library\Sources\dotNet45\CoreLib45\Data\DataAccessTools\DataAccessEntityOnLinq.cs:line 132
+   at Mohammad.Data.BusinessTools.BusinessEntity`2.SaveChanges() in D:\Programming\VS\Library\Sources\dotNet45\CoreLib45\Data\BusinessTools\BusinessEntity.cs:line 263
+   at Mohammad.Projects.TariqMal.Business.Internals.AtmManipulationBusinessEntityBase`6.OnUpdating(Guid id, TArgument argument, Language lang) in D:\Programming\VS\tariqmal\Sources\ATM\Backend\Business\Internals\AtmManipulationBusinessEntityBase.cs:line 110
+   at Mohammad.Projects.TariqMal.Business.Internals.AtmManipulationBusinessEntityBase`6.Update(Guid id, TArgument arg, Language lang) in D:\Programming\VS\tariqmal\Sources\ATM\Backend\Business\Internals\AtmManipulationBusinessEntityBase.cs:line 93
+   at Mohammad.Projects.TariqMal.Business.Entities.UserEntity.Edit(Guid id, RegisterUserArgument args, Language language) in D:\Programming\VS\tariqmal\Sources\ATM\Backend\Business\Entities\UserEntity.cs:line 183
+   at Mohammad.Projects.TariqMal.Api.Controllers.UserController.<>c__DisplayClass4_0.<EditUser>b__0() in D:\Programming\VS\tariqmal\Sources\ATM\Backend\WebApi\Areas\Api\Controllers\UserController.cs:line 55
+   at Mohammad.Web.Api.LibraryApiControllerBase.Run[TResult](Func`1 action) in D:\Programming\VS\Library\Sources\dotNet45\Web45\Api\LibraryApiControllerBase.cs:line 112
+   at Mohammad.Web.Api.LibraryApiControllerBase.<>c__DisplayClass18_0`1.<RunAsync>b__0() in D:\Programming\VS\Library\Sources\dotNet45\Web45\Api\LibraryApiControllerBase.cs:line 129
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Mohammad.Web.Api.LibraryApiControllerBase.<Async>d__15`1.MoveNext() in D:\Programming\VS\Library\Sources\dotNet45\Web45\Api\LibraryApiControllerBase.cs:line 98
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Mohammad.Web.Api.LibraryApiControllerBase.<RunAsync>d__18`1.MoveNext() in D:\Programming\VS\Library\Sources\dotNet45\Web45\Api\LibraryApiControllerBase.cs:line 129
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Mohammad.Projects.TariqMal.Api.Controllers.UserController.<EditUser>d__4.MoveNext() in D:\Programming\VS\tariqmal\Sources\ATM\Backend\WebApi\Areas\Api\Controllers\UserController.cs:line 55
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Threading.Tasks.TaskHelpersExtensions.<CastToObject>d__1`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()

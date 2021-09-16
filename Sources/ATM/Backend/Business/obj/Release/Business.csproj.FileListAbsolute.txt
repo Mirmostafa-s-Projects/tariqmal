@@ -1,0 +1,17 @@
+D:\Programming\VS\tariqmal\Sources\ATM\Backend\Business\bin\Release\ATM.BLL.dll
+D:\Programming\VS\tariqmal\Sources\ATM\Backend\Business\bin\Release\Newtonsoft.Json.dll
+D:\Programming\VS\tariqmal\Sources\ATM\Backend\Business\bin\Release\System.ValueTuple.dll
+D:\Programming\VS\tariqmal\Sources\ATM\Backend\Business\bin\Release\ATM.BLL.Models.dll
+D:\Programming\VS\tariqmal\Sources\ATM\Backend\Business\bin\Release\ATM.DAL.dll
+D:\Programming\VS\tariqmal\Sources\ATM\Backend\Business\bin\Release\Library45.Core.dll
+D:\Programming\VS\tariqmal\Sources\ATM\Backend\Business\bin\Release\Library45.Web.dll
+D:\Programming\VS\tariqmal\Sources\ATM\Backend\Business\bin\Release\System.Web.Http.dll
+D:\Programming\VS\tariqmal\Sources\ATM\Backend\Business\bin\Release\System.Net.Http.Formatting.dll
+D:\Programming\VS\tariqmal\Sources\ATM\Backend\Business\bin\Release\ATM.DAL.dll.config
+D:\Programming\VS\tariqmal\Sources\ATM\Backend\Business\bin\Release\Library45.Core.pdb
+D:\Programming\VS\tariqmal\Sources\ATM\Backend\Business\bin\Release\Library45.Web.pdb
+D:\Programming\VS\tariqmal\Sources\ATM\Backend\Business\bin\Release\Library45.Web.dll.config
+D:\Programming\VS\tariqmal\Sources\ATM\Backend\Business\obj\Release\Business.csprojAssemblyReference.cache
+D:\Programming\VS\tariqmal\Sources\ATM\Backend\Business\obj\Release\Business.csproj.CoreCompileInputs.cache
+D:\Programming\VS\tariqmal\Sources\ATM\Backend\Business\obj\Release\Business.csproj.CopyComplete
+D:\Programming\VS\tariqmal\Sources\ATM\Backend\Business\obj\Release\ATM.BLL.dll
